@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Shapes Testsuite">
+	<test name="All Shapes Test">
+		<groups>
+			<define name="all tests">
+				<include name="triangleTests"></include>
+				<include name="circleTests"></include>
+				<include name="squareTests"></include>
+				<include name="rectangleTests"></include></define>
+			<run>
+				<include name="all tests"></include></run></groups>
+		<classes>
+			<class name="TestArea"></class></classes></test></suite>
