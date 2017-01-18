@@ -10,7 +10,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * Created by govinsr on 1/3/17.
+ * Created by Srikkanth Govindaraajan on 1/3/17.
  */
 public class LookUp {
     private String ipAddress;
@@ -165,7 +165,9 @@ public class LookUp {
         state = state.replaceAll(" ","%20");
         city = city.replaceAll(" ","%20");
 
-        String base_command = "python /Users/govinsr/Documents/EclipseWorkspace/weatherlookup/weatherlookup.py ";
+        // The python script is my python_programs repository. Please clone that and replace path_to_script variable
+        // If not, java will throw a compilation error
+        String base_command = "python " + path_to_script + "weatherlookup.py ";
         String command = null;
         switch(choice) {
             case 1:
